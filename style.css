@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: #545454;
+    font-size: 4rem;
+}
+
+h2 {
+    color: #545454;
+    font-size: 3.5rem;
+}
+
+.header {
+    padding: 20px 0;
+    background: #2d4058;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    gap: 35px;
+    font-size: 1.5rem;
+    line-height: 160%;
+}
+
+.navigation__link {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.logo_img {
+    border-radius: 30%;
+    width: 120px;
+    height: 100px;
+}
+
+.link-burger {
+    color: #f4bf4c;
+    text-decoration: none;
+}
+
+.language-switcher img {
+    width: 32px;
+    height: 32px;
+    border-radius: 30%;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slogan {
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.about {
+    background: #f6f6f6;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    gap: 50px;
+}
+
+.about-img {
+    width: 350px;
+    height: 170px;
+}
+
+.about-img img {
+    width: 350px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* .about__title {
+    text-align: center;
+    font-size: 3.5rem;
+} */
+
+.about__text {
+    font-size: 1.7rem;
+}
+
+.services__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    /* gap: 150px; */
+}
+
+.services__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.services__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-img img {
+    width: 600px;
+    height: 330px;
+    border-radius: 10px;
+}
+
+.portfolio {
+    padding-bottom: 40px;
+    background: #f6f6f6;
+}
+
+.portfolio__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.photos img {
+    width: 580px;
+    height: 345px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+}
+
+.photo {
+    position: relative;
+}
+.description {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+    font-size: 4rem;
+    background: #2d4058;
+    border-radius: 10px;
+}
+
+.photo:hover .description {
+    bottom: 0;
+    opacity: 1;
+}
+
+.footer {
+    padding: 20px 0;
+    background: #2d4058;
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
+}
+
+.ico-phone {
+    display: inline-block;
+    background-image: url(./assets/ico/phone.svg);
+    width: 35px;
+    height: 30px;
+}
+
+.viber::before {
+    content: url(./assets/ico/viber.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.whats-app::before {
+    content: url(./assets/ico/whatsapp.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}
+
+.telegram::before {
+    content: url(./assets/ico/telegram.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #f4bf4c;
+    font-size: 2rem;
+}
+
+.footer__contacts {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.facebook {
+    display: inline-block;
+    background-image: url(./assets/ico/facebook.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.instagram {
+    display: inline-block;
+    background-image: url(./assets/ico/instagram1.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.footer__logo {
+    flex: 1;
+    text-align: center;
+}
