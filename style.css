@@ -58,14 +58,15 @@ h2 {
     font-size: 2rem;
 }
 
-.header__logo-img--scrolled {
-    height: 50px;
-}
-
 .header__logo-img {
     border-radius: 30%;
-    max-width: 120px;
-    max-height: 100px;
+    width: 120px;
+    height: 100px;
+}
+
+.header__logo-img--scrolled {
+    width: 90px;
+    height: 70px;
 }
 
 .footer__logo-img {
@@ -233,35 +234,9 @@ h2 {
 
 .ico-phone {
     display: inline-block;
-    background-image: url(./assets/ico/phone.svg);
+    background-image: url(./assets/ico/mobile.svg);
     width: 35px;
     height: 30px;
-}
-
-.viber::before {
-    content: url(./assets/ico/viber.svg);
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    padding-right: 5px;
-    padding-left: 2px;
-}
-
-.whats-app::before {
-    content: url(./assets/ico/whatsapp.svg);
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    padding-right: 5px;
-}
-
-.telegram::before {
-    content: url(./assets/ico/telegram.svg);
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    padding-right: 5px;
-    padding-left: 2px;
 }
 
 .footer__link {
@@ -297,6 +272,28 @@ h2 {
     height: 40px;
 }
 
+.whats-app {
+    display: inline-block;
+    background-image: url(./assets/ico/whatsapp.svg);
+
+    width: 40px;
+    height: 40px;
+}
+
+.telegram {
+    display: inline-block;
+    background-image: url(./assets/ico/telegram_icon.svg);
+    width: 40px;
+    height: 40px;
+}
+
+.viber {
+    display: inline-block;
+    background-image: url(./assets/ico/viber.svg);
+    width: 40px;
+    height: 40px;
+}
+
 .social {
     flex: 1;
     display: flex;
@@ -305,7 +302,31 @@ h2 {
     gap: 20px;
 }
 
+.phone {
+    display: block;
+    background-image: url(./assets/ico/phone_icon_130858.svg);
+    width: 40px;
+    height: 40px;
+}
+
 .footer__logo {
     flex: 1;
     text-align: center;
+}
+
+.social-panel-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.social-panel {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-panel li {
+    margin-bottom: 10px;
 }
