@@ -25,7 +25,7 @@ h2 {
 }
 
 .header {
-    padding: 10px 0;
+    padding: 20px 0;
     background: #2d4058;
     position: fixed;
     top: 0;
@@ -60,13 +60,13 @@ h2 {
 
 .header__logo-img {
     border-radius: 30%;
-    width: 120px;
-    height: 100px;
+    width: 100px;
+    height: 50px;
 }
 
 .header__logo-img--scrolled {
     width: 90px;
-    height: 70px;
+    height: 40px;
 }
 
 .footer__logo-img {
@@ -80,14 +80,28 @@ h2 {
     text-decoration: none;
 }
 
+.link-burger:hover {
+    color: white;
+}
+
+.language-switcher {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
 .language-switcher img {
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 30%;
 }
 
+.language-switcher img:hover {
+    transform: scale(1.1);
+}
+
 .video-container video {
-    padding-top: 123px;
+    padding-top: 93px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -97,6 +111,7 @@ h2 {
     font-weight: bold;
     text-align: center;
     padding: 50px 20px;
+    background: #f4bf4c;
 }
 
 .title {
@@ -111,18 +126,18 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 100px;
+    padding: 25px 50px;
     gap: 50px;
 }
 
-.about-img {
+/* .about-img {
     width: 350px;
     height: 170px;
-}
+} */
 
 .about-img img {
-    width: 350px;
-    height: 170px;
+    width: 600px;
+    height: 330px;
     border-radius: 10px;
 }
 
@@ -145,19 +160,21 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 100px;
-    /* gap: 150px; */
+    padding: 50px 50px;
+    /* gap: 250px; */
 }
 
 .services__text {
     display: flex;
+
     flex-direction: column;
     gap: 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .services__list {
     display: flex;
+    list-style-position: inside;
     flex-direction: column;
     gap: 10px;
 }
@@ -245,6 +262,14 @@ h2 {
     font-size: 2rem;
 }
 
+.footer__link:hover {
+    color: white;
+}
+
+.social__link:hover {
+    transform: scale(1.5);
+}
+
 .footer__contacts {
     display: flex;
     flex: 1;
@@ -318,15 +343,19 @@ h2 {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 0;
+    right: 10px;
+    z-index: 100;
 }
 
 .social-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.social-panel li {
-    margin-bottom: 10px;
-}
+/* .social-panel li {
+    margin-bottom: 20px;
+} */
