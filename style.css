@@ -81,7 +81,10 @@ h2 {
 }
 
 .link-burger:hover {
-    color: white;
+    color: #f6f6f6;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    /* text-decoration-color: #f4bf4c; */
 }
 
 .language-switcher {
@@ -186,7 +189,7 @@ h2 {
 }
 
 .portfolio {
-    padding-bottom: 40px;
+    padding: 20px 0 40px;
     background: #f6f6f6;
 }
 
@@ -263,7 +266,7 @@ h2 {
 }
 
 .footer__link:hover {
-    color: white;
+    color: #f6f6f6;
 }
 
 .social__link:hover {
