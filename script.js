@@ -6,10 +6,10 @@ function onScroll() {
 
     if (window.scrollY > 140) {
         header.classList.add("header--scrolled");
-        headerLogo.classList.add("header__logo-img--scrolled");
+        // headerLogo.classList.add("header__logo-img--scrolled");
     } else {
         header.classList.remove("header--scrolled");
-        headerLogo.classList.remove("header__logo-img--scrolled");
+        // headerLogo.classList.remove("header__logo-img--scrolled");
     }
 }
 
@@ -22,3 +22,39 @@ function removeScrollListener() {
 }
 
 addScrollListener();
+
+const servicesItems = document.querySelectorAll(".services__item");
+
+servicesItems.forEach((item) => {
+    item.addEventListener("mouseenter", handleMouseEnter);
+    item.addEventListener("mouseleave", handleMouseLeave);
+});
+
+function handleMouseEnter(event) {
+    const currentItem = event.currentTarget;
+    // currentItem.classList.add("active");
+
+    const subServicesList = currentItem.querySelector(".sub-services__list");
+    if (subServicesList) {
+        subServicesList.classList.add("active");
+    }
+}
+
+function handleMouseLeave(event) {
+    const currentItem = event.currentTarget;
+    // currentItem.classList.remove("active");
+
+    const subServicesList = currentItem.querySelector(".sub-services__list");
+    if (subServicesList) {
+        subServicesList.classList.remove("active");
+    }
+}
+
+// servicesItems.forEach((item) => {
+//     item.addEventListener("click", handleClick);
+// });
+
+// function handleClick(event) {
+//     const currentItem = event.currentTarget;
+//     currentItem.classList.toggle("active");
+// }
