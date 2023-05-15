@@ -23,16 +23,17 @@ function removeScrollListener() {
 
 addScrollListener();
 
-const servicesItems = document.querySelectorAll(".services__item");
+function addEventListeners() {
+    const servicesItems = document.querySelectorAll(".services__item");
 
-servicesItems.forEach((item) => {
-    item.addEventListener("mouseenter", handleMouseEnter);
-    item.addEventListener("mouseleave", handleMouseLeave);
-});
+    servicesItems.forEach((item) => {
+        item.addEventListener("mouseenter", handleMouseEnter);
+        item.addEventListener("mouseleave", handleMouseLeave);
+    });
+}
 
 function handleMouseEnter(event) {
     const currentItem = event.currentTarget;
-    // currentItem.classList.add("active");
 
     const subServicesList = currentItem.querySelector(".sub-services__list");
     if (subServicesList) {
@@ -42,19 +43,10 @@ function handleMouseEnter(event) {
 
 function handleMouseLeave(event) {
     const currentItem = event.currentTarget;
-    // currentItem.classList.remove("active");
 
     const subServicesList = currentItem.querySelector(".sub-services__list");
     if (subServicesList) {
         subServicesList.classList.remove("active");
     }
 }
-
-// servicesItems.forEach((item) => {
-//     item.addEventListener("click", handleClick);
-// });
-
-// function handleClick(event) {
-//     const currentItem = event.currentTarget;
-//     currentItem.classList.toggle("active");
-// }
+addEventListeners();
